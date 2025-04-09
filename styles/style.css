@@ -1,0 +1,29 @@
+/* Reset default browser margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+/*Body Section */
+body {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+}
+
+/* Nav Section */
+
+.navSection {
+    background-color: rgb(228, 123, 228);
+    padding: 2%;
+}
+.navBar{
+  display: inline;
+  padding: 8px;
+  text-size-adjust: ;
+}
+
