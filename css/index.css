@@ -1,0 +1,226 @@
+/* Reset default browser margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+/*Body Section */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display";
+  font-weight: 200;
+  background-color: rgb(255, 205, 240);
+}
+
+/* Nav Section */
+
+.navSection {
+    background-color: rgba(73, 5, 73, 0.932);
+    padding: 1.90%;
+}
+.navBar{
+  display: inline;
+  padding: 2%;
+  font-size: 20px;
+  
+}
+.navBar:hover{
+  background-color: rgba(131, 10, 115, 0.74);
+}
+.navBar a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+/* Name*/
+#myName{
+  margin: 2%;
+  padding: 0;
+  text-align: center;
+}
+
+#myName h1{ 
+  font-size: 40px;
+  font-family: "Playfair Display";  
+  text-shadow: 2px 2px 5px rgb(148, 55, 148);
+  color: #5e0166;
+}
+
+/* Profile Picture*/
+#profilePicture {
+  background-color: #8c3394;
+  border: 5px solid  antiquewhite;;
+  padding: 10px;
+  display: block;               
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin: 20px auto;            
+  width: fit-content;          
+}
+
+#profilePicture img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* About*/
+#about h2{
+  text-shadow: 2px 2px 5px rgb(148, 55, 148);
+  color: #5e0166;
+  text-align: center;
+}
+#about{
+  background-color: #8c3394b2;
+  border: 5px solid  antiquewhite;;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: block;               
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin: 20px auto;            
+  width: 46%;
+  height: 300px;
+  float: left;
+  margin-right: 1%;
+  margin-left: 3%;
+  overflow-y: auto;
+}
+#about p{
+  padding: 5px;
+  display: block;               
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.288);
+  margin: 10px auto;            
+  width: fit-content; 
+  background-color: rgba(133, 14, 133, 0.74);
+  color: antiquewhite;
+  font-size: 20px; 
+}
+/* Experience*/
+#experience h2{
+  text-shadow: 2px 2px 5px rgb(148, 55, 148);
+  color: #5e0166;
+}
+#experience{
+  background-color: #8c3394bd;
+  border: 5px solid  antiquewhite;;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: block;               
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin: 20px auto; 
+  margin-left: 1%;  
+  margin-right: 3%;         
+  width: 46%;
+  height: 300px;
+  float: right;
+}
+#experience h2{
+  text-align: center;
+}
+#experience ul{
+  list-style: none;
+  text-align: center;
+ 
+}
+#experience li{
+  padding: 5px;
+  display: block;               
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.288);
+  margin: 10px auto;            
+  width: fit-content; 
+  background-color: rgba(133, 14, 133, 0.74);
+  color: antiquewhite;
+  font-size: 20px;
+}
+/* Connect*/
+#connect h2{
+  text-shadow: 2px 2px 5px rgb(148, 55, 148);
+  color: #5e0166;
+}
+#connect {
+  text-align: center;
+  margin-top: 30px
+}
+#connect li{
+  display: inline;
+  margin: 0 10px;
+}
+
+/* Contact Me Page*/
+
+#contactMeForm{
+  background-color: #8c33949d;
+  border: 5px solid  antiquewhite;;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: block;               
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin: 0 auto;
+  margin-top: 10%;
+  height: 300px;
+  width: 500px;
+}
+#contactMeForm h1{
+  text-shadow: 2px 2px 5px rgb(148, 55, 148);
+  color: #5e0166;
+  text-align: center;
+  font-size: 40px;
+}
+#contactMeForm form{
+  padding-top: 20px;
+}
+#contactMeForm form section{
+  padding: 10px;
+  text-align: center;
+  color: #5e0166;
+  font-size: 20px;
+}
+.contactSubmit input[type=submit]{
+  padding: 10px;
+  display: block;               
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.288);
+  margin: 10px auto;            
+  width: fit-content; 
+  background-color: rgba(133, 14, 133, 0.74);
+  color: antiquewhite;
+  font-size: 20px;
+  border: none;            
+  outline: none;           
+  cursor: pointer;
+}
+.contactSubmit input[type=submit]:hover {
+  background-color: #5e0166;
+  color: white;
+}
+
+input[type=text], input[type=email]{
+  width: 50%;
+  padding: 4px 5px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
