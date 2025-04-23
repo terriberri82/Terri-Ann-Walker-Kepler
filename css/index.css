@@ -1,176 +1,250 @@
-/* Reset default browser margin and padding */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Playfair Display';
   }
   html {
     scroll-behavior: smooth;
   }
 
-
 /*Body Section */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Playfair Display";
   font-weight: 200;
   background-color: rgb(255, 205, 240);
 }
-
-/* Nav Section */
-
-.navSection {
-    background-color: rgba(73, 5, 73, 0.932);
-    padding: 1.90%;
+header{
+  position: fixed;
+  top: 0;
+ 
+  width: 100%;    
+  z-index: 999;
+  background-color: #5e0166;
 }
-.navBar{
+main{
+  padding-top: 4%;
+}
+
+/*==========UTILITY CLASSES==========*/
+/* === DISPLAY === */
+.display-inline{
   display: inline;
-  padding: 2%;
-  font-size: 20px;
-  
 }
-.navBar:hover{
-  background-color: rgba(131, 10, 115, 0.74);
+.display-block{
+  display: block;
 }
-.navBar a {
-  text-decoration: none;
-  color: antiquewhite;
+.display-flex{
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* Name*/
-#myName{
-  margin: 2%;
-  padding: 0;
+/* === LAYOUT === */
+/* === TEXT === */
+.text-center{
   text-align: center;
 }
-
-#myName h1{ 
-  font-size: 40px;
-  font-family: "Playfair Display";  
-  text-shadow: 2px 2px 5px rgb(148, 55, 148);
-  color: #5e0166;
+.no-underline{
+  text-decoration: none;
+}
+.no-list-style{
+  list-style-type: none;
 }
 
-/* Profile Picture*/
-#profilePicture {
-  background-color: #8c3394;
-  border: 5px solid  antiquewhite;;
-  padding: 10px;
-  display: block;               
+/* === TEXT SIZE === */
+.text-lg{
+  font-size: 20px;
+}
+.text-2xl{
+  font-size: 40px;
+}
+/* === TEXT FONT FAMILIES === */
+
+/* === TEXT COLORS === */
+.text-antique{
+  
+  color: antiquewhite;
+}
+.text-purple-dark {
+  color: #5e0166;
+}
+/* ===TEXT STYLE === */
+
+.ft-weight-900{
+  font-weight: 900;
+}
+/* === TEXT SHADOWS === */
+.shadow-purple {
+  text-shadow: 2px 2px 5px rgb(148, 55, 148);
+}
+
+/* === COLORS === */
+.bg-purple-dark{
+  background-color: rgba(73, 5, 73, 0.932);
+}
+.bg-purple-hover:hover{
+  background-color: rgba(131, 10, 115, 0.74);
+}
+
+/* === SPACING === */
+.small-padding{
+  padding: 2%;
+}
+.no-padding{
+  padding: 0;
+}
+.small-margin{
+  margin: 2%;
+}
+/* === BORDERS === */
+.default-border{
+ border:  5px solid  antiquewhite;
+}
+
+/*==========CUSTOM STYLING==========*/
+
+/* ==== NAVIGATION===*/
+
+.nav-items{
+  list-style-type: none;
+  display: flex;
+  
+}
+
+
+/*===PROFILE PICTURE===*/
+.profile-picture {
+  background-color:rgb(148, 55, 148);
+  padding: .75%;             
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   margin: 20px auto;            
-  width: fit-content;          
+  width: fit-content;
+  height: auto;          
 }
 
-#profilePicture img {
-  display: block;
-  max-width: 100%;
+.profile-picture img {
+  width: 500px;
   height: auto;
   border-radius: 10px;
 }
 
-/* About*/
-#about h2{
-  text-shadow: 2px 2px 5px rgb(148, 55, 148);
-  color: #5e0166;
-  text-align: center;
-}
+/* ===ABOUT===*/
+
 #about{
   background-color: #8c3394b2;
-  border: 5px solid  antiquewhite;;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
-  padding-right: 30px;
-  display: block;               
+  padding-right: 30px;         
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   margin: 20px auto;            
   width: 46%;
-  height: 300px;
-  float: left;
-  margin-right: 1%;
-  margin-left: 3%;
+  height: auto;
   overflow-y: auto;
 }
+
 #about p{
-  padding: 5px;
-  display: block;               
+  padding: 5px;      
   border-radius: 2px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.288);
-  margin: 10px auto;            
+  margin: 30px auto;            
   width: fit-content; 
   background-color: rgba(133, 14, 133, 0.74);
-  color: antiquewhite;
-  font-size: 20px; 
 }
-/* Experience*/
-#experience h2{
-  text-shadow: 2px 2px 5px rgb(148, 55, 148);
-  color: #5e0166;
+.image-about-section{
+  display: flex;
 }
+
+/* ===EXPERIENCE===*/
+
 #experience{
   background-color: #8c3394bd;
-  border: 5px solid  antiquewhite;;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
-  padding-right: 30px;
-  display: block;               
+  padding-right: 30px;         
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  margin: 20px auto; 
-  margin-left: 1%;  
-  margin-right: 3%;         
-  width: 46%;
-  height: 300px;
-  float: right;
-}
-#experience h2{
-  text-align: center;
-}
-#experience ul{
-  list-style: none;
-  text-align: center;
- 
-}
-#experience li{
-  padding: 5px;
-  display: block;               
+  margin: 20px auto;      
+  width: 75%;
+  height: auto;
+  }
+
+.experience-style{
+  padding: 5px;      
   border-radius: 2px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.288);
   margin: 10px auto;            
-  width: fit-content; 
   background-color: rgba(133, 14, 133, 0.74);
-  color: antiquewhite;
-  font-size: 20px;
-}
-/* Connect*/
-#connect h2{
-  text-shadow: 2px 2px 5px rgb(148, 55, 148);
-  color: #5e0166;
-}
-#connect {
-  text-align: center;
-  margin-top: 30px
-}
-#connect li{
-  display: inline;
-  margin: 0 10px;
+   
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
-/* Contact Me Page*/
+.job-section-style{
+  border: antiquewhite solid;
+  border-radius: 2px;
+  padding: 5px; 
+  margin: 20px auto; 
+  display: flex;
+  gap: 30px;
+}
+
+
+/* ===SKILLS===*/
+
+#skills{
+  background-color: #8c3394b2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;     
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin: 20px auto;            
+  width: 46%;
+  height: auto;
+}
+
+/* ===PROJECTS=== */
+#projects{
+  background-color: #8c3394bd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;         
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin: 20px auto;    
+  width: 46%;
+  height: auto;
+}
+
+/* ===CONNECT=== */
+
+#connect {
+  margin-top: 30px;
+  text-align: center;
+}
+#connect li{
+  margin: 0 10px;
+}
+#connect ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===CONTACT ME=== */
 
 #contactMeForm{
   background-color: #8c33949d;
-  border: 5px solid  antiquewhite;;
   padding-top: 20px;
   padding-bottom: 10px;
   padding-left: 30px;
-  padding-right: 30px;
-  display: block;               
+  padding-right: 30px;        
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   margin: 0 auto;
@@ -178,30 +252,20 @@ body {
   height: 300px;
   width: 500px;
 }
-#contactMeForm h1{
-  text-shadow: 2px 2px 5px rgb(148, 55, 148);
-  color: #5e0166;
-  text-align: center;
-  font-size: 40px;
-}
+
 #contactMeForm form{
   padding-top: 20px;
 }
 #contactMeForm form section{
   padding: 10px;
-  text-align: center;
-  color: #5e0166;
-  font-size: 20px;
 }
 .contactSubmit input[type=submit]{
-  padding: 10px;
-  display: block;               
+  padding: 10px;         
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.288);
   margin: 10px auto;            
   width: fit-content; 
   background-color: rgba(133, 14, 133, 0.74);
-  color: antiquewhite;
   font-size: 20px;
   border: none;            
   outline: none;           
@@ -209,7 +273,6 @@ body {
 }
 .contactSubmit input[type=submit]:hover {
   background-color: #5e0166;
-  color: white;
 }
 
 input[type=text], input[type=email]{
@@ -218,9 +281,4 @@ input[type=text], input[type=email]{
   margin: 5px 0;
   box-sizing: border-box;
 }
-/* Clearfix */
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
