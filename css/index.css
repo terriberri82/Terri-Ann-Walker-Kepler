@@ -184,8 +184,7 @@ main{
 }
 
 .job-section-style{
-  border: antiquewhite solid;
-  border-radius: 2px;
+ 
   padding: 5px; 
   margin: 20px auto; 
   display: flex;
@@ -230,12 +229,19 @@ main{
 }
 #connect li{
   margin: 0 10px;
+  
 }
 #connect ul{
   list-style: none;
   display: flex;
   justify-content: center;
+  
 }
+#connect img{
+  height: 75px;
+  width: 75px;
+}
+
 
 /* ===CONTACT ME=== */
 
