@@ -115,7 +115,7 @@ main{
 /*===PROFILE PICTURE===*/
 .profile-picture {
   background-color:rgb(148, 55, 148);
-  padding: .75%;             
+  padding: 1%;             
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   margin: 20px auto;            
@@ -124,7 +124,7 @@ main{
 }
 
 .profile-picture img {
-  width: 500px;
+  width: 450px;
   height: auto;
   border-radius: 10px;
 }
@@ -132,15 +132,15 @@ main{
 /* ===ABOUT===*/
 
 #about{
-  background-color: #8c3394b2;
+  background-color: rgba(133, 14, 133, 0.74);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;         
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  
   margin: 20px auto;            
-  width: 46%;
+  width: 80%;
   height: auto;
   overflow-y: auto;
 }
@@ -148,19 +148,18 @@ main{
 #about p{
   padding: 5px;      
   border-radius: 2px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.288);
   margin: 30px auto;            
   width: fit-content; 
-  background-color: rgba(133, 14, 133, 0.74);
 }
 .image-about-section{
   display: flex;
+  gap: 2%;
 }
 
 /* ===EXPERIENCE===*/
 
 #experience{
-  background-color: #8c3394bd;
+  background-color: rgba(133, 14, 133, 0.74);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
@@ -169,15 +168,15 @@ main{
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   margin: 20px auto;      
   width: 75%;
-  height: auto;
+  height: fit-content;
   }
 
 .experience-style{
   padding: 5px;      
   border-radius: 2px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.288);
+ 
   margin: 10px auto;            
-  background-color: rgba(133, 14, 133, 0.74);
+  
    
   column-gap: 10px;
   row-gap: 10px;
@@ -195,7 +194,7 @@ main{
 /* ===SKILLS===*/
 
 #skills{
-  background-color: #8c3394b2;
+  background-color:rgba(133, 14, 133, 0.74);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
@@ -209,7 +208,7 @@ main{
 
 /* ===PROJECTS=== */
 #projects{
-  background-color: #8c3394bd;
+  background-color: rgba(133, 14, 133, 0.74);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
