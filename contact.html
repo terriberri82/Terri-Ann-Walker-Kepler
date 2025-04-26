@@ -1,61 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Terri-Ann Walker's Portfolio</title>
+        <title>Contact Me Page</title>
         <meta charset="UTF-8">
         <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/index.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <section class="navSection">
-            <nav class="navBarLinks">
-                <ul>
-                    <li class="navBar"><a href="index.html">Home</a></li>
-                    <li class="navBar"><a href="index.html#about">About</a></li>
-                    <li class="navBar"><a href="index.html#experience">Experience</a></li>
-                    <li class="navBar"><a href="contact.html">Contact Me</a></li>
+        <header class="">
+            <nav class="">
+                <ul class="nav-items">
+                    <li class="bg-purple-hover small-padding  text-lg ">
+                        <a class="no-underline text-antique" href="index.html">Home</a>
+                    </li>
+                    <li class="bg-purple-hover small-padding text-lg ">
+                        <a class="no-underline text-antique" href="index.html#about">About</a>
+                    </li>
+                    <li class="bg-purple-hover small-padding  text-lg ">
+                        <a class="no-underline text-antique" href="index.html#experience">Experience</a>
+                    </li>
+                    <li class="bg-purple-hover small-padding  text-lg ">
+                        <a class="no-underline text-antique" href="index.html#skills">Skills</a>
+                    </li>
+                    <li class="bg-purple-hover small-padding  text-lg ">
+                        <a class="no-underline text-antique" href="index.html#projects">Projects</a>
+                    </li>
+                    <li class="bg-purple-hover small-padding text-lg ">
+                        <a class="no-underline text-antique" href="contact.html">Contact Me</a>
+                    </li>
                 </ul>
             </nav>
-        </section>
-        <section id="contactMeForm">
-            <h1>Contact Me</h1>
-            <form>
-                <section class="contactName">
-                    <label for="name">Enter your name: </label>
-                    <input type="text" name="name" id="name" required />
-                </section>
-                <section class="contactEmail">
-                    <label for="email">Enter your email: </label>
-                    <input type="email" name="email" id="email" required />
-                </section>
-                <section class="contactSubmit">
-                    <input type="submit" value="Submit" />
-                </section>
-            </form>
-        </section>
-        <section id="connect">
-            <h2>Connect</h2>
-            <ul>
-                <li class>
-                    <a href="https://github.com/terriberri82">
-                        <img src="https://res.cloudinary.com/doiwe9d5a/image/upload/v1744483185/GitHubLogo_mawj14.png" alt="" style="width:75px;height:75px;">
-                    </a>
-                </li>
-                <li>
-                    <a href="www.linkedin.com/in/twalker4">
-                        <img src="https://res.cloudinary.com/doiwe9d5a/image/upload/v1744483185/LinkedInLogo_ngssnb.png" alt=""  style="width:75px;height:75px;">
-
-                    </a>
-                </li>
-                <li>
-                    <a href="discordapp.com/users/terriberri82">
-                        <img src="https://res.cloudinary.com/doiwe9d5a/image/upload/v1744483185/DiscordLogo_ah4utd.png" alt=""  style="width:75px;height:75px;">
+        </header>
+        <main>
+            <section id="contactMeForm" class="display-block default-border">
+                <h1 class="text-center text-purple-dark text-2xl shadow-purple ">Contact Me</h1>
+                <form>
+                    <section class="contactName text-center text-purple-dark text-lg">
+                        <label for="name">Enter your name: </label>
+                        <input type="text" name="name" id="name" required />
+                    </section>
+                    <section class="contactEmail text-center text-purple-dark text-lg">
+                        <label for="email">Enter your email: </label>
+                        <input type="email" name="email" id="email" required />
+                    </section>
+                    <section class="contactSubmit  ">
+                        <input type="submit" value="Submit" class="display-block text-antique" />
+                    </section>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <section id="connect" class="">
+                <h2 class="text-purple-dark text-center shadow-purple ft-weight-900">Connect</h2>
+                <ul class="text-center">
+                    <li class=" ">
+                        <a href="https://github.com/terriberri82">
+                            <img src="https://res.cloudinary.com/doiwe9d5a/image/upload/v1744483185/GitHubLogo_mawj14.png" alt="GitHub Logo Icon">
+                        </a>
                     </li>
-            </ul>
-        </section>
-        
+                    <li class="">
+                        <a href="https://www.linkedin.com/in/twalker4">
+                            <img src="https://res.cloudinary.com/doiwe9d5a/image/upload/v1744483185/LinkedInLogo_ngssnb.png" alt="LinkedIn Logo Icon">
+
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="https://discordapp.com/users/terriberri82">
+                            <img src="https://res.cloudinary.com/doiwe9d5a/image/upload/v1744483185/DiscordLogo_ah4utd.png" alt="Discord Logo Icon">
+                        </li>
+                </ul>
+            </section>
+        </footer>
     </body>
 </html>
