@@ -1,0 +1,504 @@
+
+/* =============MEDIA QUERIES===========*/
+
+/* from a max width of 480px and smaller */
+@media (max-width: 480px){
+    html {
+        
+        scroll-padding-top: 5em;
+      }
+
+      /* === SPACING === */
+     .small-padding{
+        padding: 4em;
+     } 
+
+     .small-margin{
+        margin: 0%;
+      }
+
+      /* === TEXT SIZE === */
+.text-lg{
+    font-size: .75rem;
+  }
+  .text-xl{
+    font-size: 1.75rem;
+  }
+  .text-2xl{
+    font-size: 2.5rem;
+  }
+
+/*====NAVIGATION===*/
+
+.hamburger {
+    display: block; /* Show hamburger on small screens */
+    
+  }
+  
+
+  .nav-items {
+    display: none; /* Hide nav by default on small screens */
+    flex-direction: column;
+    background-color: #5e0166;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+    
+  }
+  .background-nav{
+    padding: 20px;
+    
+  }
+
+  /* When checkbox is checked, show the menu */
+  .menu-toggle:checked ~.nav-items {
+    display: flex;
+  }
+
+  /*=== NAME VIDEO SECTION===*/
+  .video-display-one{
+    display: none;
+  }
+  .video-display-two{
+    display: block;
+  }
+
+  .name-video-section {
+    
+    position: relative;
+    width: 110vw;
+    height: 50vh; /* You can tweak this */
+    overflow: hidden;
+    margin-bottom: 3em;
+  }
+  .name-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none;
+  }
+ 
+
+  /*====MORE BUTTON====*/
+  .open-page{
+    display: none;
+    
+  }
+
+
+  /*====ABOUT====*/
+  .image-about-section{
+    flex-direction: column;
+  }
+  .profile-picture {
+    width: 60%;
+    max-width: 300px;
+    margin: 2em auto;
+}
+  
+  .profile-picture img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  #about p{
+    width: 90%;
+    margin: 1em auto;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /*=== EXPERIENCE===*/
+ 
+    .job-flex-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+      padding: 1em;
+    }
+  
+    .job-section-style {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1em;
+    }
+  
+    .job-section-style:last-child {
+      width: 100%;
+      grid-column: auto;
+    }
+  
+    .col-1,
+    .col-2 {
+      margin: 0;
+      width: 100%;
+    }
+  
+    #experience {
+      padding: 1em;
+    }
+  
+    h2, h3, h4, p {
+      text-align: left;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    #contactMeForm{
+      width: 80%;
+        
+        
+      }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    html {
+      scroll-padding-top: 5em;
+    }
+  
+    /* === SPACING === */
+    .small-padding {
+      padding: 3em;
+    }
+  
+    .small-margin {
+      margin: 1em;
+    }
+  
+    /* === TEXT SIZE === */
+    .text-lg {
+      font-size: 1rem;
+    }
+  
+    .text-xl {
+      font-size: 2rem;
+    }
+  
+    .text-2xl {
+      font-size: 2.75rem;
+    }
+  
+    /* === NAVIGATION === */
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-items {
+      display: none;
+      flex-direction: column;
+      background-color: #5e0166;
+      position: absolute;
+      top: 50px;
+      left: 10px;
+      right: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      width: 40%;
+    }
+  
+    .background-nav {
+      padding: 25px;
+    }
+  
+    .menu-toggle:checked ~ .nav-items {
+      display: flex;
+    }
+  
+    /* === NAME VIDEO SECTION === */
+    .video-display-one {
+      display: none;
+    }
+  
+    .video-display-two {
+      display: block;
+    }
+  
+    .name-video-section {
+      position: relative;
+      width: 100vw;
+      height: 60vh;
+      overflow: hidden;
+      margin-bottom: 3em;
+    }
+  
+    .name-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: none;
+    }
+  
+    /* === MORE BUTTON === */
+    
+  .open-page{
+    display: none;
+    
+  }
+  
+    /* === ABOUT SECTION === */
+    .image-about-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-picture {
+      width: 50%;
+      max-width: 400px;
+      margin: 2em auto;
+    }
+  
+    .profile-picture img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  
+    #about p {
+      width: 85%;
+      margin: 1em auto;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+  
+    /* === EXPERIENCE SECTION === */
+    .job-flex-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+      padding: 1em;
+    }
+  
+    .job-section-style {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1.2em;
+    }
+  
+    .job-section-style:last-child {
+      width: 100%;
+      grid-column: auto;
+    }
+  
+    .col-1,
+    .col-2 {
+      margin: 0;
+      width: 100%;
+    }
+  
+    #experience {
+      padding: 1.2em;
+    }
+  
+    h2, h3, h4, p {
+      text-align: left;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    #contactMeForm{
+        width: 80%;
+          
+          
+        }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    html {
+      scroll-padding-top: 5em;
+    }
+  
+    /* === SPACING === */
+    .small-padding {
+      padding: 3em;
+    }
+  
+    .small-margin {
+      margin: 1.5em;
+    }
+  
+    /* === TEXT SIZE === */
+    .text-lg {
+      font-size: 1rem;
+    }
+  
+    .text-xl {
+      font-size: 2.2rem;
+    }
+  
+    .text-2xl {
+      font-size: 2.75rem;
+    }
+  
+    /* === NAVIGATION === */
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-items {
+      display: none;
+      flex-direction: column;
+      background-color: #5e0166;
+      position: absolute;
+      top: 60px;
+      left: 10px;
+      right: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      width: 40%;
+    }
+  
+    .background-nav {
+      padding: 25px;
+    }
+  
+    .menu-toggle:checked ~ .nav-items {
+      display: flex;
+    }
+  
+    /* === NAME VIDEO SECTION === */
+    .video-display-one {
+      display: none;
+    }
+  
+    .video-display-two {
+      display: block;
+    }
+  
+    .name-video-section {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      margin-bottom: 3em;
+      background-color: black;
+    }
+  
+    .name-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: none;
+    }
+  
+    .open-page {
+        display: block;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+  
+    /* === ABOUT SECTION === */
+    .image-about-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-picture {
+      width: 50%;
+      max-width: 400px;
+      margin: 2em auto;
+    }
+  
+    .profile-picture img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  
+    #about p {
+      width: 85%;
+      margin: 1em auto;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      text-align: center;
+    }
+  
+    /* === EXPERIENCE SECTION === */
+    .job-flex-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      padding: 2em;
+    }
+  
+    .job-section-style {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1.5em;
+    }
+  
+    .job-section-style:last-child {
+      width: 100%;
+      grid-column: auto;
+    }
+  
+    .col-1,
+    .col-2 {
+      margin: 0;
+      width: 100%;
+    }
+  
+    #experience {
+      padding: 2em;
+    }
+  
+    h2, h3, h4, p {
+      text-align: left;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+    #contactMeForm{
+        width: 70%;
+          
+          
+        }
+  }
+
+  @media (min-width: 1025px) {
+    .name-video-section {
+      height: 100vh;
+      overflow: hidden;
+      background-color: black;
+      position: relative;
+    }
+  
+    .name-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: none;
+    }
+  
+    .open-page {
+      display: block;
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    #contactMeForm{
+        width: 60%;
+          
+          
+        }
+  }

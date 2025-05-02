@@ -6,13 +6,20 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/index.css" rel="stylesheet" />
+        <link href="css/media.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="">
-            <nav class="">
+            <nav class="background-nav">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+            
+            <label for="menu-toggle" class="hamburger">
+              ☰
+            </label>
                 <ul class="nav-items">
                     <li class="bg-purple-hover small-padding  text-lg ">
                         <a class="no-underline text-antique" href="index.html">Home</a>
@@ -30,45 +37,60 @@
                         <a class="no-underline text-antique" href="#projects">Projects</a>
                     </li>
                     <li class="bg-purple-hover small-padding text-lg ">
-                        <a class="no-underline text-antique" href="contact.html">Contact Me</a>
+                        <a class="no-underline text-antique" href="connect.html">Connect</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section  class="small-margin small-padding text-center ">
-                <h1 class="text-purple-dark text-2xl shadow-purple">Terri-Ann Walker</h1>
+            <section class="name-video-section">
+                <video autoplay muted loop playsinline class="name-video video-display-one">
+                  <source src="https://res.cloudinary.com/doiwe9d5a/video/upload/v1745768079/Portfolio_logo_video_lanyde.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <video autoplay muted loop playsinline  class="name-video video-display-two">
+                    <source src="https://res.cloudinary.com/doiwe9d5a/video/upload/v1746141214/name_video_500_px_width_hlpdp1.mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <section class="open-page">
+                    <a class="display-block text-antique text-lg" type="button" href="index.html#about">More</a>
+                    <!-- I want this more button to delay and appear after 5 seconds, Will revist this since I have to use Javascript to do this-->
+                </section>
             </section>
             
                 
-            <section  id="about" class="default-border">
-                <h2 class="text-purple-dark text-center shadow-purple ft-weight-900 ">About</h2>
-                <section class="image-about-section">
+            <section  id="about" class="default-border section-color">
+                <h2 class="text-purple-dark text-center shadow-purple ft-weight-900 text-xl">About</h2>
+                <section class="image-about-section ">
                     <section class="profile-picture ">
-                        <img src="https://res.cloudinary.com/doiwe9d5a/image/upload/v1744481592/profile_photo_zgwe3i.jpg" alt="Terri-Ann Walker's profile photo" class="display-block" >
+                        <img src="https://res.cloudinary.com/doiwe9d5a/image/upload/v1744481592/profile_photo_zgwe3i.jpg" alt="Terri-Ann Walker's profile photo" class="" >
                     </section>
-                    <p class="display-block text-antique text-lg">I’m currently learning software engineering through the Code the Dream bootcamp, where I’m building up my skills in web development. My background is in tech support, executive relations, and finance, but the heart of my journey comes from wanting more freedom and flexibility in my life. 
-                        I started exploring tech while working remotely and traveling, and I quickly realized how much I enjoy solving problems and creating things from scratch.
-                        As I continue growing in this field, I’m excited to take on projects that challenge me, allow me to collaborate, and help make a real impact.</p>
+                    <p class="display-block text-charcoal text-lg">I'm a rising software engineer, currently sharpening my web development skills through the Code the Dream bootcamp. My foundation comes from a background in tech support, executive relations, and finance—fields that strengthened my problem-solving, communication, and analytical thinking.
+
+                        My journey into tech was fueled by a desire for greater freedom and creativity. While working remotely and traveling, I discovered a true passion for building solutions and bringing ideas to life through code.
+                        
+                        Today, I'm focused on taking on projects that challenge me, spark collaboration, and drive meaningful impact. I'm excited to continue growing, contributing to innovative teams, and shaping technology that makes a difference.</p>
                 </section>        
             </section>
   
-            <section  id="experience" class="display-block default-border">
-                <h2 class="text-purple-dark text-center shadow-purple ft-weight-900">Experience</h2>
+            <section  id="experience" class="">
+                <section>
+                    <h2 class="text-purple-dark text-center shadow-purple ft-weight-900 text-xl">Experience</h2>
+                </section>
                 
-                <section class=" experience-style text-antique text-lg">
-                    <section class="job-section-style ">
+                <section class=" job-flex-grid text-charcoal text-lg ">
+                    <section class="job-section-style  job-section-color col-1">
                         <section>
                             <h4>2020-pres.</h4>
                         </section>
                         <section>
-                        <h3>Virtual Meeting Moderator</h3>
+                        <h3 class="">Virtual Meeting Moderator</h3>
                         <p>Facilitate the curation of Virtual Instructor Lead Training (vILT) sessions and provided support to instructors and sales consultants to ensure a seamless experience.
                         Identify process improvement best practices and reported these issues with the Newrow platform and team retrospective.
                         Deliver ongoing technical support, troubleshooting, maintenance, and student inquiries</p>
                         </section>
                     </section>
-                    <section class="job-section-style ">
+                    <section class="job-section-style job-section-color col-2">
                         <section>
                             <h4>2019-2024</h4>
                         </section>
@@ -80,7 +102,7 @@
                         Assisted students and faculty in troubleshooting basic technical issues in an expedited manner</p>
                         </section>
                     </section>
-                    <section class="job-section-style ">
+                    <section class="job-section-style  job-section-color col-1">
                         <section>
                             <h4>2018-2020</h4>
                         </section>
@@ -90,7 +112,7 @@
                         Assessed students using documents, recorded classroom data and issued feedback to parents and teachers.</p>
                         </section>
                     </section>
-                    <section class="job-section-style ">
+                    <section class="job-section-style  job-section-color col-2">
                         <section>
                             <h4>2017-2018</h4>
                         </section>
@@ -101,7 +123,7 @@
                             Tracked, managed, and responded to customer inquiries via Zendesk in an efficient and effective manner.</p>
                         </section>
                     </section>
-                    <section class="job-section-style ">
+                    <section class="job-section-style  job-section-color col3">
                         <section>
                             <h4>2010-2016</h4>
                         </section>
@@ -109,7 +131,7 @@
                         <h3>Executive Relations Analyst</h3>
                         <p>Provided creative solutions to executive client business obstacles and Zendesk customer inquiries which increased the customer experience and reduced customer processing time by 75%.
                         Investigated, resolved, and documented verbal and written complaints from the VZW Executive offices, the Better Business Bureau (BBB), the Federal Communications Commission (FCC), and the Public Utilities Commission (PUC).</p>
-                        <h3>Customer Service Advocate </h3>
+                        <h3 class="job-six-padding">Customer Service Advocate </h3>
                         <p>Troubleshooted and resolved billing, technical issues, and customer complaints.
                             Increased the customer experience by providing information on new products, rate plans, and services.
                             Diffused volatile situations in order decrease churn.
@@ -120,17 +142,17 @@
                     
                 </section>
             </section>
-            <section  id="skills" class="display-block default-border">
-                <h2 class="text-purple-dark text-center shadow-purple ft-weight-900">Skills</h2>
+            <section  id="skills" class="display-block default-border section-color">
+                <h2 class="text-purple-dark text-center shadow-purple ft-weight-900 text-xl">Skills</h2>
             </section>
-            <section  id="projects" class="display-block default-border">
-                <h2 class="text-purple-dark text-center shadow-purple ft-weight-900">Projects</h2>
+            <section  id="projects" class="display-block default-border section-color">
+                <h2 class="text-purple-dark text-center shadow-purple ft-weight-900 text-xl">Projects</h2>
                 <ul></ul>
             </section>
         </main>    
-        <footer>
+        <footer class="footer-color">
             <section id="connect" class="">
-                <h2 class="text-purple-dark text-center shadow-purple ft-weight-900">Connect</h2>
+                <h2 class="text-purple-dark text-center shadow-purple ft-weight-900 text-xl">Connect</h2>
                 <ul class="text-center">
                     <li class=" ">
                         <a href="https://github.com/terriberri82">
