@@ -3,6 +3,8 @@
 /* I chose to build my site Desktop first, only because that was the way it was built prior to 
 this assignment.*/
 /* from a max width of 480px and smaller */
+
+/* MOBILE STYLE*/
 @media (max-width: 480px){
     html {
         
@@ -160,6 +162,7 @@ this assignment.*/
       }
   }
 
+  /* TABLET STYLE*/
   @media (min-width: 481px) and (max-width: 768px) {
     html {
       scroll-padding-top: 5em;
@@ -313,6 +316,8 @@ this assignment.*/
           
         }
   }
+
+  /* LAPTOP STYLE*/
 
   @media (min-width: 769px) and (max-width: 1024px) {
     html {
@@ -471,6 +476,7 @@ this assignment.*/
         }
   }
 
+  /* DESKTOP STYLE*/
   @media (min-width: 1025px) {
     .name-video-section {
       height: 100vh;
