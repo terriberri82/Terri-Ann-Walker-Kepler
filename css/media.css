@@ -1,6 +1,7 @@
 
 /* =============MEDIA QUERIES===========*/
-
+/* I chose to build my site Desktop first, only because that was the way it was built prior to 
+this assignment.*/
 /* from a max width of 480px and smaller */
 @media (max-width: 480px){
     html {
