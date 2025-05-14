@@ -39,13 +39,10 @@ for (let i=0; i<skills.length; i++){
 
 
 
-
+//MORE BUTTON JAVASCRIPT//
 window.addEventListener('load', function () {
-   
-  
     setTimeout(function () {
       const moreBtn = document.querySelector('.more-button');
-      
       if (moreBtn) {
         moreBtn.classList.remove('display-none'); 
       }
