@@ -48,6 +48,9 @@ main{
   display: flex;
   flex-wrap: wrap;
 }
+.display-none{
+  display: none !important;
+}
 
 /* === LAYOUT === */
 /* === TEXT === */
@@ -192,7 +195,6 @@ color: #ca8905;
 /*=====MORE ANCHOR BUTTON=====*/
 
 .open-page a{
-  display: inline-block;
   padding: 10px 50px;
   background: linear-gradient(135deg, #3b0a4bb6 0%, #5d1451b6 100%);
   color: white;
@@ -214,7 +216,7 @@ color: #ca8905;
 }
 
 .open-page{
-  margin-bottom: 4em;
+  margin-bottom: 3.5em;
   position: absolute;
   bottom: 30px;
   left: 50%;
