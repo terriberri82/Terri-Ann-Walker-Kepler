@@ -48,6 +48,9 @@ main{
   display: flex;
   flex-wrap: wrap;
 }
+.display-none{
+  display: none !important;
+}
 
 /* === LAYOUT === */
 /* === TEXT === */
@@ -125,14 +128,14 @@ main{
 /* ==== NAVIGATION===*/
 
 .menu-toggle {
-  display: none; /* Hide the checkbox */
+  display: none; 
 }
 
 /* Hamburger icon */
 .hamburger {
   font-size: 30px;
   cursor: pointer;
-  display: none; /* Hide by default, show on small screens */
+  display: none; 
 }
 .nav-items{
   list-style-type: none;
@@ -142,7 +145,7 @@ main{
 .background-nav{
   background: linear-gradient(135deg, #3B0A4B 0%, #5D1451 100%);
   color: #FFFFFF;
-  min-height: 40px; /* or however tall your header normally is */
+  min-height: 40px; 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -192,7 +195,6 @@ color: #ca8905;
 /*=====MORE ANCHOR BUTTON=====*/
 
 .open-page a{
-  display: inline-block;
   padding: 10px 50px;
   background: linear-gradient(135deg, #3b0a4bb6 0%, #5d1451b6 100%);
   color: white;
@@ -214,7 +216,7 @@ color: #ca8905;
 }
 
 .open-page{
-  margin-bottom: 4em;
+  margin-bottom: 3.5em;
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -332,6 +334,25 @@ color: #ca8905;
   width: 90%;
   max-width: 1200px;
   height: auto;
+}
+
+#skills ul>li{
+  list-style-type: none;
+  padding: 1em 2em; 
+  margin: 0em;
+  display: flex;
+  gap: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.63);
+  background-color: white;
+  
+}
+#skills ul{
+display: flex;
+justify-content: space-around;
+padding-top: 1em;
+padding-bottom: 1em;
+
 }
 
 /* ===PROJECTS=== */
