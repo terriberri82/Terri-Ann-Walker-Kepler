@@ -37,8 +37,12 @@
                         <a class="no-underline text-antique" href="#projects">Projects</a>
                     </li>
                     <li class="bg-purple-hover small-padding text-lg ">
-                        <a class="no-underline text-antique" href="connect.html">Connect</a>
+                        <a class="no-underline text-antique" href="#leaveMessage">Leave a Message</a>
                     </li>
+                    <li class="bg-purple-hover small-padding text-lg ">
+                        <a class="no-underline text-antique" href="#connect">Connect</a>
+                    </li>
+                    
                 </ul>
             </nav>
         </header>
@@ -152,7 +156,23 @@
                 <h2 class="text-purple-dark text-center shadow-purple ft-weight-900 text-xl">Projects</h2>
                 <ul></ul>
             </section>
-        </main>    
+            <section class="message-style">
+                <section id="leaveMessage" class="leave-message-style">
+                    <h2 class="text-purple-dark text-center shadow-purple ft-weight-900 text-xl">Leave a Message</h2>
+                    <form name="leave_message">
+                        <input class="input" placeholder="Name" type="text" name="usersName" required/><br>
+                        <input class="input" placeholder="Email" type="email" name="usersEmail" required/><br>
+                        <textarea class="form-text" placeholder="Message" name="usersMessage" required></textarea><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </section>  
+                <section id="messages">
+                    <h2 class="text-purple-dark text-center shadow-purple ft-weight-900 text-xl">Messages</h2>
+                    <ul></ul>
+                </section>
+            </section>
+        </main>  
+        
         <footer class="footer-color footer-location">
             <section id="connect" class="connect-footer">
                 <h2 class="text-purple-dark text-center shadow-purple ft-weight-900 text-xl">Connect</h2>

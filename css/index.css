@@ -424,7 +424,6 @@ padding-bottom: 1em;
   border: none;            
   outline: none;           
   cursor: pointer;
-  
 }
 .contactSubmit input[type=submit]:hover {
   background-color: #5e0166;
@@ -446,4 +445,60 @@ padding-bottom: 1em;
 
 .input:focus {
   box-shadow: 5.5px 7px 0 rgba(73, 5, 73, 0.932);;
+}
+
+
+/* Open your index.css file
+ Style your message form fields and buttons keeping in mind:
+ adequate specing so form fields aren't crowded
+ appropriate sizing in media queries so a user on a mobile device can easily touch/tap into the fields to type
+ button sizing to accomodate click and touch/tap interactions*/
+
+ /*======= MESSAGE SECTION=====*/
+ .message-style{
+  background-color: #8c33949d;
+  padding: 1.25em 2em;      
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin: 0 auto;
+  margin-top: 5em;
+  margin-bottom: 2em;
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2em;
+ }
+ .leave-message-style h2{
+  margin-bottom: .5em;
+ }
+ .leave-message-style form{
+ display: flex;
+ flex-direction: column;
+
+ }
+ .leave-message-style form button{
+   padding: 20px;         
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.288);
+  margin: 10px auto;            
+  width: fit-content; 
+  background-color: rgba(133, 14, 133, 0.74);
+  border: none;            
+  outline: none;           
+  cursor: pointer;
+ }
+
+.form-text{
+   font-family: "SF Pro";
+  max-width: 190px;
+  padding: 0.875rem;
+  font-size: 1rem;
+  border: 1.5px solid #000;
+  border-radius: 0.5rem;
+  box-shadow: 2.5px 3px 0 rgba(73, 5, 73, 0.932);;
+  outline: none;
+  transition: ease 0.25s;
 }

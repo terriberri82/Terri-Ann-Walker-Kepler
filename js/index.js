@@ -51,4 +51,35 @@ window.addEventListener('load', function () {
 
 
 
+  //Leave A Message Section//
+  const messageForm = document.getElementsByName("leave_message")[0]
+  messageForm.addEventListener("submit", function(event){
+    event.preventDefault();
+    const name =  event.target.usersName.value;
+    const email = event.target.usersEmail.value;
+    const message = event.target.usersMessage.value;
+    console.log("Name:", name); 
+    console.log("Email:", email); 
+    console.log("Message:", message)
+
+    const messageSection = document.querySelector("#messages");
+    const messageList = messageSection.querySelector("ul"); 
+    const newMessage = document.createElement("li");
+    newMessage.innerHTML = `<a href = "mailto: ${email}">${name}</a><br><span></span>${message} `;
+    
+    const removeButton = document.createElement("button");
+    removeButton.innerText = "Remove"
+    removeButton.setAttribute("type","button");
+    removeButton.addEventListener("click", function (event){
+      const messageParent = document.getElementById("messages");
+      const entry = removeButton.parentElement;
+      entry.remove();
+    })
+    newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+   
+  })
+
+
+
 
