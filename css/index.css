@@ -355,16 +355,7 @@ padding-bottom: 1em;
 
 }
 
-/* ===PROJECTS=== */
-#projects{
-  padding: 1em 2.5em;          
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  margin: 20px auto;    
-  width: 90%;
-  max-width: 1200px;
-  height: auto;
-}
+
 
 /* ===FOOTER=== */
 .footer-color{
@@ -501,4 +492,40 @@ padding-bottom: 1em;
   box-shadow: 2.5px 3px 0 rgba(73, 5, 73, 0.932);;
   outline: none;
   transition: ease 0.25s;
+}
+
+/*=======Project Sections=======*/
+
+/* Style your Repository List
+ Open your index.css file
+ Add styling to your projects list, be sure to account for any changes you want in media queries
+ STRETCH GOAL: Use flexbox (or grid) to style your list of repositories */
+
+/* ===PROJECTS=== */
+#projects{
+  padding: 1em 2.5em;          
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin: 20px auto;    
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+}
+
+.projects-style {
+  display: flex;
+justify-content: space-around;
+padding-top: 1em;
+padding-bottom: 1em;
+
+}
+.projects-style li{
+   list-style-type: none;
+  padding: 1em 2em; 
+  margin: 0em;
+  display: flex;
+  gap: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.63);
+  background-color: white;
 }
