@@ -81,5 +81,26 @@ window.addEventListener('load', function () {
   })
 
 
+ // Project Section  // 
+fetch('https://api.github.com/users/terriberri82/repos')
+  .then(response => {
+    return response.json()
+   
+  })
+  .then(data => {
+     const repositories = data;
+    console.log(repositories);
+     const projectSections = document.querySelector('#projects');
+    const projectList = projectSections.querySelector('ul'); 
+  for (let i=0; i<repositories.length; i++){
+    const project =document.createElement("li");
+    project.innerText = repositories[i].name;
+    projectList.appendChild(project);
+};
+  })
+  
+  .catch(error => {
+    console.error('Error:', error);
+  });
 
 
