@@ -34,30 +34,31 @@ this assignment.*/
 /*====NAVIGATION===*/
 
 .hamburger {
-    display: block; /* Show hamburger on small screens */
+    display: block; 
     
   }
   
 
   .nav-items {
-    display: none; /* Hide nav by default on small screens */
+    display: none; 
     flex-direction: column;
     background-color: #5e0166;
     position: absolute;
     top: 50px;
     left: 10px;
     right: 10px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     width: 30%;
-    
+  }
+  .nav-items li{
+    padding: 1em;
   }
   .background-nav{
     padding: 20px;
-    
   }
 
-  /* When checkbox is checked, show the menu */
+ 
   .menu-toggle:checked ~.nav-items {
     display: flex;
   }
@@ -74,7 +75,7 @@ this assignment.*/
     
     position: relative;
     width: 110vw;
-    height: 50vh; /* You can tweak this */
+    height: 50vh; 
     overflow: hidden;
     margin-bottom: 3em;
   }
@@ -87,7 +88,6 @@ this assignment.*/
     object-fit: cover;
     transform: none;
   }
- 
 
   /*====MORE BUTTON====*/
   .open-page{
@@ -157,9 +157,26 @@ this assignment.*/
 
     #contactMeForm{
       width: 80%;
-        
-        
       }
+  }
+  /*======SKILLS SECTION=====*/
+  #skills ul{
+    flex-wrap: wrap;
+    row-gap: 1em;
+  }
+
+  /*====PROJECTS SECTION======*/
+  .projects-style{
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  /*====MESSAGE STYLE======*/
+  .message-style{
+    width: 70%;
+  }
+  .form-media-query{
+    margin-left: 1.5em;
   }
 
   /* TABLET STYLE*/
@@ -211,6 +228,9 @@ this assignment.*/
     .background-nav {
       padding: 25px;
     }
+     .nav-items li{
+    padding: 1em;
+  }
   
     .menu-toggle:checked ~ .nav-items {
       display: flex;
@@ -363,6 +383,9 @@ this assignment.*/
       border-radius: 10px;
       width: 40%;
     }
+     .nav-items li{
+    padding: 1em;
+  }
   
     .background-nav {
       padding: 25px;

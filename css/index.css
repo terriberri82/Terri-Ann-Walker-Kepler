@@ -291,7 +291,6 @@ color: #ca8905;
   gap: 10px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.63);
-  
 
 
 }
@@ -528,4 +527,7 @@ padding-bottom: 1em;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.63);
   background-color: white;
+}
+.projects-style li a{
+text-decoration: none;
 }
