@@ -46,7 +46,7 @@ window.addEventListener('load', function () {
       if (moreBtn) {
         moreBtn.classList.remove('display-none'); 
       }
-    }, 5000);
+    }, 3000);
   });
 
 
@@ -81,5 +81,29 @@ window.addEventListener('load', function () {
   })
 
 
+ // Project Section  // 
+fetch('https://api.github.com/users/terriberri82/repos')
+  .then(response => {
+    return response.json()
+  })
+  .then(data => {
+     const repositories = data;
+    console.log(repositories);
+     const projectSections = document.querySelector('#projects');
+    const projectList = projectSections.querySelector('ul'); 
+  for (let i=0; i<repositories.length; i++){
+    const project =document.createElement("li");
+    const link = document.createElement("a");
+    link.href = repositories[i].html_url;
+    link.innerText = repositories[i].name;
+    link.target = "_blank";
+    project.appendChild(link);
+    projectList.appendChild(project);
+};
+  })
+  
+  .catch(error => {
+    console.error('Error:', error);
+  });
 
 
